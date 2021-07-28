@@ -1,17 +1,16 @@
 
-* {
-    overflow-x: hidden;
+body {
     padding: 0px;
     margin: 0px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif sans-serif;
 }
 
 .attribution {
-font-size: 11px; text-align: center; 
+    font-size: 11px; text-align: center; 
 }
 
 .attribution a {
-color: hsl(228, 45%, 44%) 
+    color: hsl(228, 45%, 44%) 
 }
 
 
@@ -53,13 +52,14 @@ li a:hover{
 }
 
 .bg-img{
-background-image: url(/image-hero.jpg);
-height:60vh;
-width: 83%;
-background-repeat: no-repeat;
-background-size: cover;
-margin: auto;
+    background-image: url(/image-hero.jpg);
+    height:60vh;
+    width: 83%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
 }
+
 #rectangle {
 	width: 26%;
 	height: 19%;
@@ -71,7 +71,6 @@ margin: auto;
     right: 37%;
     bottom: 0%;
     z-index:50;
-    
 }
 .blackMainBox{
     position: absolute;
@@ -80,7 +79,6 @@ margin: auto;
     right: 8%;
     bottom: 0%;
     padding-left: 0.5%;
-    
     letter-spacing: 5px;
     z-index: 55;
 }
@@ -165,15 +163,9 @@ letter-spacing: 1px;
 
 
 .firstColumnImages{
-display: flex;
-justify-content:center;
-margin-top: 5%;
-
-
-}
-.img1, .img2,.img3,.img4{
-    margin-left: 1.5%;
-    cursor: pointer;
+    display: flex;
+    justify-content:center;
+    margin-top: 5%;
 }
 
 .secondColumnImages{
@@ -182,86 +174,87 @@ margin-top: 5%;
     margin-top: 1%;
 }
 
-.img5, .img6,.img7,.img8 {
-margin-left: 1.5%;
-}
-.img1, .img2,.img3,.img4,.img5, .img6,.img7,.img8{
+.image{
     cursor: pointer;
 }
 
-.img1, .img2,.img3,.img4,.img5, .img6,.img7,.img8:hover{
+.image:not(:first-child) {
+    margin-left: 1.5%;
+}
+
+.image:hover{
 
 }
 
-
-
-.blackFooter{
-    background-color: black;
+.links{
     width: auto;
     height: 120px;
 }
 
 footer{
-    margin-top: 5%;
-    position: relative;
     color: wheat;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
 }
+
 .menuDown{
     color: black;
     display: flex;
-justify-content: space-between;
-width: 20%;
-margin-left: 3%;
+    justify-content: space-between;
 }
+
 .itemDownNav{
-    margin-top: 13%;
+
 }
+
 .logoDown{
-    position: relative;
-    top: 28%;
-    left: 3%;
-color: white;
-font-family:'Courier New', Courier, monospace;
-        font-weight: bold;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
 }
 
 .copyright{
-    position: absolute;
-    left: 80%;
-    bottom: 20%;
+
 }
 
-.social{
-    position: absolute;
-    top: 20%;
-    left: 86%;
+.social {
+    height: 25px;
+    width: 20px;
 }
-.social2{
-    position: absolute;
-    top: 22%;
-    left: 88%;
+
+.social-facebook {
+    background-image: url('/images/icon-facebook.svg');
+    background-size: cover;
 }
-.social3{
-    position: absolute;
-    top: 20%;
-    left: 89.8%;
+
+.social {
+    position: relative;
+    cursor: pointer;
 }
- .social4{
+
+.social::after {
     position: absolute;
-    top: 21%;
-    left: 91.8%;
-} 
+    bottom: -10px;
+    content: '';
+    height: 2px;
+    width: 20px;
+    background: #fff;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.social:hover::after {
+    opacity: 1;
+}
+
 .iconSocial{
     cursor: pointer;
     transition: 0.5s;
-   
 }
 div.iconSocial > .social:hover{
-}
 
-
-
-
+} */
 
 
 
