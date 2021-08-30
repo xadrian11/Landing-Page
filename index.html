@@ -7,8 +7,11 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="header.css">
-    <link rel="stylesheet" href="main.css">\
+    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
     <title>Frontend Mentor PROJECT</title>
 </head>
 
@@ -16,9 +19,9 @@
     <header>
         <nav>
             <div class="bg-img">
-                <div class="top-logo"></div>
                 <h1 class="immersive-title">Immersive <br> experiences <br> that deliver</h1>
                 <ul class="nav-top-menu">
+                    <div class="top-logo"></div>
                     <li class="nav-item"><a href="#">About</a></li>
                     <li class="nav-item"><a href="#">Careers</a></li>
                     <li class="nav-item"><a href="#">Events</a></li>
@@ -42,25 +45,33 @@
         <div class="white-rectangle"></div>
     </section>
     <section class="under-man-vr-image">
-        <button class="see-all-button"> See all </button>
-        <h2 class="headlines-creations">Our Creations</h2>
-        <div class="first-column-images">
-            <img class="img" src="images/desktop/image-deep-earth.jpg" alt=" Center earth">
-
-            <img class="img" src="images/desktop/image-night-arcade.jpg" alt="arcade">
-
-            <img class="img" src="images/desktop/image-soccer-team.jpg" alt="football player">
-
-            <img class="img" src="images/desktop/image-grid.jpg" alt="sport car">
+        <div class="container">
+            <button class="see-all-button container-item "> See all </button>
+            <h2 class="headlines-creations container-item">Our Creations</h2>
         </div>
-        <div class="second-column-images">
-            <img class="img" src="images/desktop/image-from-above.jpg" alt=" Center earth">
+        <div class="image-container">
+            <div class="first-column-images">
+                <img class="img" src="images/desktop/image-deep-earth.jpg" alt=" Center earth">
 
-            <img class="img" src="images/desktop/image-pocket-borealis.jpg" alt="arcade">
+                <img class="img" src="images/desktop/image-night-arcade.jpg" alt="arcade">
 
-            <img class="img" src="images/desktop/image-curiosity.jpg" alt="football player">
 
-            <img class="img" src="images/desktop//image-fisheye.jpg" alt="sport car">
+                <img class="img" src="images/desktop/image-soccer-team.jpg" alt="football player">
+
+
+                <img class="img" src="images/desktop/image-grid.jpg" alt="sport car">
+
+            </div>
+
+            <div class="second-column-images">
+                <img class="img" src="images/desktop/image-from-above.jpg" alt=" Center earth">
+
+                <img class="img" src="images/desktop/image-pocket-borealis.jpg" alt="arcade">
+
+                <img class="img" src="images/desktop/image-curiosity.jpg" alt="football player">
+
+                <img class="img" src="images/desktop//image-fisheye.jpg" alt="sport car">
+            </div>
         </div>
         <!-- <div class="title-images">
             <p class="title-img-first-section">deep <br> earth</p>
@@ -81,8 +92,17 @@
         Make it fisheye -->
     </section>
     <footer>
-        <div class="footer-left">
+        <div class="footer-top">
             <p class="logo-down">loopstudios</p>
+            <div class="socials">
+                <div class="social social-facebook" alt="facebook icon-facebook"></div>
+                <div class="social social-twitter" alt="icon-twitter"></div>
+                <div class="social social-pinterest" alt="icon-pinterest"></div>
+                <div class="social social-instagram" alt="icon-instagram"></div>
+
+            </div>
+        </div>
+        <div class="footer-bottom">
             <ul class="menu-footer-down-list">
                 <li class="item-down-nav"><a href="#">About</a></li>
                 <li class="item-down-nav"><a href="#">Careers</a></li>
@@ -90,16 +110,9 @@
                 <li class="item-down-nav"><a href="#">Products</a></li>
                 <li class="item-down-nav"><a href="#">Support</a></li>
             </ul>
-        </div>
-        <div class="footer-right">
-            <div class="socials">
-                <div class="social social-facebook" alt="facebook icon-facebook"></div>
-                <div class="social social-twitter " alt="icon-twitter"></div>
-                <div class="social social-pinterest" alt="icon-pinterest"></div>
-                <div class="social social-instagram" alt="icon-instagram"></div>
-            </div>
             <p class="copyright">© 2021 Loopstudios. All rights reserved.</p>
         </div>
+
     </footer>
     <script src="main.js"></script>
 </body>

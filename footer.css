@@ -1,59 +1,78 @@
-
 footer{
-background-color: black;
-margin-top: 50px;
-height: 90px;
 display: flex;
-justify-content: space-around
+flex-direction: column;
+background-color: black;
+height: 120px;
+margin-top: 50px;
+border-radius: 2px;
+padding: 25px;
 }
 
-
-.menu-footer-down-list{
+.footer-top{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    width: 400px;
-    height: 50px;
-}
-
-.footer-left {
-    border: 3px solid blue;
-    flex:0 0 410px
-}
-
-.footer-right {
-    display: flex;
-    align-items: flex-end;
-    border: 3px solid blue;
-    flex:0 0 410px;
-    flex-direction: column;
+    flex-basis: 50%;
 }
 
 .logo-down{
+    align-self: center;
+    flex-basis: 260px;
     color: white;
-    font-size: 1.1rem;
-    padding-top: 10px ;
-    font-family:'Courier New', Courier, monospace;
-    text-align:start;
+    font-size: 1.3rem;
+    text-align: center;
     font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    margin: 4px 0;
+    
+}
+
+.footer-bottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.menu-footer-down-list{
+    display: flex;
+    flex-basis: 400px;
+    margin: 6px 0;
+    justify-content: space-around;
 }
 
 .copyright{
-    padding-top: 20px;
-color: rgba(151, 150, 150, 0.753);
+    margin: 4px 0;
+    color: rgba(151, 150, 150, 0.753);
 }
 
-.social {
-    height: 25px;
-    width: 25px;
-    cursor: pointer;
-    background-size: cover;
+.item-down-nav{
+    position: relative;
 }
-.socials{
-    display: flex;
-    justify-content: space-around;
-    width:150px
-}
+
+.item-down-nav::after{
+        position: absolute; 
+        bottom: -12px;
+        content: "" ;
+        height: 3px;
+        width: 22px;
+        left: 21%;
+        background-color: rgb(184, 181, 181);
+        transition: all 0.5s;
+        opacity: 0;
+    }
+    .item-down-nav:hover::after{
+        opacity: 1;
+    }
+
+    .social {
+        position: relative;
+        height: 25px;
+        width: 25.6px;
+        cursor: pointer;
+        background-size: cover;
+        margin: 0 12px;
+    }
+
+
 
 .social-facebook {
     background-image: url('/images/icon-facebook.svg');
@@ -70,20 +89,29 @@ color: rgba(151, 150, 150, 0.753);
 }
 
 
-.social::after {
-    position: absolute; 
-    bottom: -20px;
-    content: "" ;
-    height: 3px;
-    width: 0;
-    left: 0;
-    background-color: white;
-    transition:  0.3s;
+.socials{
+    display: flex;
+    justify-content: space-around;
+    margin: 4px 0;
 }
 
-.social:hover::after {
-    width: 100%;
+.social::after {
+    position: absolute; 
+    bottom: -10px;
+    content: "" ;
+    height: 3px;
+    width: 25px;
+    left: 0;
+    background-color: white;
+    transition: all 0.3s;
+    opacity: 0;
 }
+
+.social:hover::after{
+    opacity: 1;
+}
+
+
 
 
 
