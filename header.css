@@ -7,30 +7,29 @@ margin: 0px;
 font-family: 'Alata', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.top-logo{ 
+
+.nav__logo{ 
 display: flex;
-flex: 1 1 150px;
-margin-top: 20px;
+flex: 1 1 200px;
+margin: 20px 0 0 20px;
 background-image: url(./images/logo.svg);
 background-size: contain ;
 background-repeat: no-repeat;
 font-family:'Courier New', Courier,monospace;
-font-size: 1.5rem;
+font-size: 2rem;
 color: #ebe7e7;
 }
 
-
-
-.nav-top-menu{
+.nav__list{
     display: flex;
     justify-content: flex-end;
+}
 
+.nav__item{
+margin-top: 30px;
+flex: 0 1 100px;
 }
-.nav-item{
-position: relative;
-margin-top: 20px;
-flex: 0 1 80px;
-}
+
 
 .nav-item::after{
     position: absolute;
@@ -43,11 +42,10 @@ flex: 0 1 80px;
     transition: all 0.3s ;
     opacity: 0;
 }
+
 .nav-item:hover::after{
     opacity: 1;
 }
-
-
 
 a {
 font-size: 0.9rem;
@@ -63,9 +61,9 @@ list-style-type: none;
 
 
 
-.bg-img{
+.background__image{
 background:linear-gradient( rgba(20, 0, 14, 0.39) 100%, rgba(26, 18, 18, 0.884)100%), url(/image-hero.jpg);
-height:70vh;
+height:76vh;
 width: 85%;
 background-repeat: no-repeat;
 background-size: cover;
@@ -74,7 +72,9 @@ margin: auto;
 padding-top:1%;
 }
 
-.immersive-title{
+
+
+.background__title{
 position: absolute;
 top: 30%;
 left: 22%;
@@ -87,7 +87,7 @@ letter-spacing: 5px;
 border: 2px solid rgb(209, 211, 209);
 }
 
-h1.immersive-title{
+h1.background__title{
 text-transform: uppercase;
 font-size:3.7rem;
 color: rgba(255, 255, 255, 0.89);

@@ -1,4 +1,4 @@
-.man-vr-image{
+.section__image{
     display: flex;
     margin: 6% 18% ;
     width: 35%;
@@ -8,12 +8,12 @@
 
 
 
-.paragraph-right-side{
+.section__paragraph{
 font-size: 1.4rem;
 color: gray;
 }
 
-.right-text-side-all{
+.section__right{
     position: absolute;
     top: 104%;
     right: 20%;
@@ -21,24 +21,24 @@ color: rgba(10, 0.5, 0,1);
 z-index: 11;
 }
 
-.headlines-right-side{
+.section__headlines{
 text-transform: uppercase;
 word-spacing: 3px;
 font-size: 2.5rem;
 font-weight: 100;
 }
 
-.white-rectangle{
+.section__rectangle--white{
     position: absolute;
     left: 45%;
-    top: 102%;
+    top: 105%;
     width: 700px;
     height: 350px;
     border: 5px solid white;
     background-color: #fff;
 }
 
-.see-all-button{
+.container__button--white{
 align-self: flex-start;
 flex: 0 1 140px;
 height:40px ;
@@ -53,7 +53,7 @@ transition:0.4s;
 order: 2;
 }
 
-.see-all-button:hover{
+.container__button--white:hover{
 background-color: black;
 color: whitesmoke;
 }
@@ -63,7 +63,7 @@ color: whitesmoke;
     flex: 0 1 150px;
 }
 
-.headlines-creations{
+.container__headlines{
     display: flex;
     justify-content: flex-end;
     flex: 0 1 19%;
@@ -74,22 +74,22 @@ color: whitesmoke;
     position: relative;
     }
     
-    .first-column-images ,.second-column-images{
-        display: flex;
+    .first__column__images , .second__column__images{
+    display: flex;
     justify-content:center;
     }
 
-    .img{
+    .images__item{
         transition: filter .5s ease-in-out;
         filter: grayscale(100%)
     }
     
-    .img:hover{
+    .images__item:hover{
         transform: translateY(10px);
         filter: none;
     }
     
-    .img::after{
+    .images__item::after{
         background: linear-gradient(to bottom,rgba(0,176,155,0.3),rgba(150,201,61,1));
         display: block;
         width: 100%;
@@ -101,13 +101,13 @@ color: whitesmoke;
     }
     
     
-    .img{
+    .images__item{
         margin-left: 1%;
         border-radius: 8px;
         cursor: pointer;
     }
     
-    .second-column-images {
+    .second__column__images {
         margin-top: 1%;
     }
     .title-images{

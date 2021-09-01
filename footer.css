@@ -8,13 +8,13 @@ border-radius: 2px;
 padding: 25px;
 }
 
-.footer-top{
+.footer__top{
     display: flex;
     justify-content: space-between;
     flex-basis: 50%;
 }
 
-.logo-down{
+.footer__logo{
     align-self: center;
     flex-basis: 260px;
     color: white;
@@ -63,7 +63,7 @@ padding: 25px;
         opacity: 1;
     }
 
-    .social {
+    .social__item {
         position: relative;
         height: 25px;
         width: 25.6px;
@@ -89,13 +89,13 @@ padding: 25px;
 }
 
 
-.socials{
+.social__container{
     display: flex;
     justify-content: space-around;
     margin: 4px 0;
 }
 
-.social::after {
+.social__item::after {
     position: absolute; 
     bottom: -10px;
     content: "" ;
@@ -107,7 +107,7 @@ padding: 25px;
     opacity: 0;
 }
 
-.social:hover::after{
+.social__item:hover::after{
     opacity: 1;
 }
 
