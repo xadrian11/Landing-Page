@@ -10,7 +10,7 @@ padding: 25px;
 
 .footer__top{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-basis: 50%;
 }
 
@@ -19,7 +19,6 @@ padding: 25px;
     flex-basis: 260px;
     color: white;
     font-size: 1.3rem;
-    text-align: center;
     font-weight: bold;
     font-family:'Courier New', Courier, monospace;
     margin: 4px 0;
@@ -28,11 +27,11 @@ padding: 25px;
 
 .footer-bottom{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center
 }
 
-.menu-footer-down-list{
+.footer__list{
     display: flex;
     flex-basis: 400px;
     margin: 6px 0;
@@ -44,22 +43,22 @@ padding: 25px;
     color: rgba(151, 150, 150, 0.753);
 }
 
-.item-down-nav{
+.footer__item{
     position: relative;
 }
 
-.item-down-nav::after{
+.footer__item::after{
         position: absolute; 
         bottom: -12px;
         content: "" ;
         height: 3px;
         width: 22px;
-        left: 21%;
+        left: 25%;
         background-color: rgb(184, 181, 181);
         transition: all 0.5s;
         opacity: 0;
     }
-    .item-down-nav:hover::after{
+    .footer__item:hover::after{
         opacity: 1;
     }
 

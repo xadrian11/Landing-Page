@@ -1,24 +1,28 @@
 
 
 body {
-list-style-type: none;
-padding: 0px;
-margin: 0px;
-font-family: 'Alata', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Alata', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+.nav{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
 
 .nav__logo{ 
-display: flex;
-flex: 1 1 200px;
-margin: 20px 0 0 20px;
-background-image: url(./images/logo.svg);
-background-size: contain ;
-background-repeat: no-repeat;
-font-family:'Courier New', Courier,monospace;
-font-size: 2rem;
-color: #ebe7e7;
+    flex-grow: 1;
+    background-image: url(./images/logo.svg);
+    background-size: contain ;
+    background-repeat: no-repeat;
+    height: 20px;
+    font-size: 2rem;
+    color: #ebe7e7;
 }
+
 
 .nav__list{
     display: flex;
@@ -26,24 +30,29 @@ color: #ebe7e7;
 }
 
 .nav__item{
-margin-top: 30px;
-flex: 0 1 100px;
+    margin: 0 20px;
+    position: relative;
+}
+.nav__item:last-child{
+    margin-right:  0;
 }
 
 
-.nav-item::after{
+.nav__item::after{
     position: absolute;
     content: "";
     bottom: -10px;
-    left: 0;
-    width: 38px;
+    left: 11px;
+    width: 20px;
     height: 2px;
     background-color: silver;
     transition: all 0.3s ;
     opacity: 0;
 }
 
-.nav-item:hover::after{
+
+
+.nav__item:hover::after{
     opacity: 1;
 }
 
@@ -53,44 +62,43 @@ text-decoration: none;
 color: white;
 }
 ul {
+    margin: 0;
+    padding: 0;
 list-style-type: none; 
 }
 
-
-
-
-
-
 .background__image{
+    display: flex;
+    flex-direction: column;
 background:linear-gradient( rgba(20, 0, 14, 0.39) 100%, rgba(26, 18, 18, 0.884)100%), url(/image-hero.jpg);
-height:76vh;
-width: 85%;
+height: 600px;
 background-repeat: no-repeat;
-background-size: cover;
-position: relative;
-margin: auto;
-padding-top:1%;
+background-size: 100% auto;
 }
 
-
-
 .background__title{
-position: absolute;
-top: 30%;
-left: 22%;
-right: 5%;
-bottom: 0%;
-width: 600px;
-height: 240px;
-padding-left: 0.5%;
-letter-spacing: 5px; 
+width: 650px;
+height: 250px;
+padding: 20px 0 ;
+font-size: 3.8rem;
+letter-spacing: 5px;
+text-transform:uppercase ;
+text-align: center;
+color: #ffff;
 border: 2px solid rgb(209, 211, 209);
 }
 
-h1.background__title{
-text-transform: uppercase;
-font-size:3.7rem;
-color: rgba(255, 255, 255, 0.89);
-font-weight:normal;
+.nav-title-wrapper{
+    display: flex;
+    flex-direction: column;
+    height:100% ;
 }
+.title-wrapper{
+    display: flex;
+    align-items:center;
+    flex-grow: 1;
+}
+
+
+
 
