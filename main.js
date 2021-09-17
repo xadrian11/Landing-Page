@@ -1,5 +1,9 @@
-const drive = false; 
-const vision = true;
+const hamburgerActive = document.querySelector('.hamburger')
 
-
-console.log (vision && drive)
+hamburgerActive.addEventListener('click', () =>{
+    if (hamburgerActive.classList.contains('open')){
+        hamburgerActive.classList.remove('open')
+    } else {
+        hamburgerActive.classList.add('open')
+    }
+})

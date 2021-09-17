@@ -1,163 +1,117 @@
-    .middle__section{
-    position: relative;
-    margin: 90px 0px; 
-    }
+.vr__section {
+	/*mobile-first*/
+	margin-top: 80px;
+	margin-bottom: 40px;
+	padding: 0 20px;
+}
 
-    .section__image{
-    width: 700px;
-    height: 510px;
-    }
+.vr__image {
+	margin-bottom: 40px;
+	width: 100%;
+}
 
-    .section_container{
-    position: relative;
-    }
+.vr_container {
+	position: relative;
+}
 
-    .section__right{
-    position: absolute;
-    right: 0;
-    left: 45%;
-    padding-bottom: 96px;
-    top: 144px;
-    flex-flow: column wrap;
-    background-color: white;
-    padding-top: 96px;
-    padding-left: 96px;
+.vr__description {
+	background-color: white;
+	text-align: center;
+}
 
-    }
+.vr__paragraph {
+	font-size: 1rem;
+	color: gray;
+}
 
-    .section__paragraph{
-    font-size: 1.6rem;
-    color: gray;
-    }
+.vr__headlines {
+	margin-top: 0;
+	text-transform: uppercase;
+	word-spacing: 3px;
+	font-size: 2.4rem;
+	font-weight: 100;
+}
 
+.gallery__heading {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+}
+.gallery__button--white {
+	display: none;
+}
 
-    .section__headlines{
-    margin-top: 0;
-    text-transform: uppercase;
-    word-spacing: 3px;
-    font-size: 3.2rem;
-    font-weight: 100;
-    }
+.gallery__button--white:hover {
+	background-color: black;
+	color: whitesmoke;
+}
 
-    .section__under__img{
-    margin-top: 256px;
-    }
+.gallery__headlines {
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	font-weight: normal;
+	letter-spacing: 4px;
+}
 
-    .container__button--white{
-    flex:0 1 150px;
-    height:40px ;
-    color:black;
-    background-color: #fff;
-    font-weight: bold;
-    cursor: pointer;
-    text-decoration: none;
-    border-radius: 2px;
-    text-transform: uppercase;
-    transition:0.4s;
-    order: 2;
-    margin-right: 16px;
-    }
+@media only screen and (min-width: 1279px) {
+	.vr__section {
+		margin-top: 50px;
+		position: relative;
+		text-align: start;
+	}
+	.vr__image {
+		width: auto;
+		height: 510px;
+	}
+	.vr__description {
+		position: absolute;
+		left: 45%;
+		padding-bottom: 96px;
+		top: 144px;
+		background-color: white;
+		padding-top: 72px;
+		padding-left: 96px;
+		text-align: start;
+	}
 
-    .container__button--white:hover{
-    background-color: black;
-    color: whitesmoke;
-    }
-    
-    .container{
-    display: flex;
-    justify-content: space-between;
-    }
+	.vr__paragraph {
+		font-size: 1.3rem;
+		color: gray;
+	}
+	.vr__headlines {
+		font-size: 3.3rem;
+	}
+	.gallery__section {
+		margin-top: 192px;
+	}
+	.gallery__button--white {
+		align-items: flex-end;
+		transition: 0.4s;
+		order: 2;
+	}
 
-    .container__headlines{
-    font-size:2rem;
-    text-transform: uppercase;
-    font-weight: normal;
-    letter-spacing: 5px;
-    }
-    
+	.gallery__heading {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: 40px;
+	}
 
-    span{
-        display: inline-block;
-    }
-    
-    
+	.gallery__headlines {
+		font-size: 2rem;
+	}
 
-    .column__images{
-    display: flex;
-    justify-content:space-between;
-    }
-
-    
-    .absolute{
-    position: absolute;
-    color: white;
-    font-size: 1.8rem;
-    text-transform: uppercase;
-    z-index: 1;
-    }
-
-    .image__text--first{
-        left: 15%;
-    }
-    
-    .image__text--first,.image__text--second,.image__text--third,.image__text--fourth{
-    bottom: 8%;
-    }
-
-    .image__text--second {
-    left:22%
-    }
-
-    .image__text--third{
-    left: 15%;
-    }
-    .image__text--fourth{
-    left: 20%;
-    }
-    
-    .image__text--fifth{
-    left: 12%;
-    }
-
-    .image__text--sixth{
-    left: 13%;
-    }
-    .image__text--seventh{
-    left: 17%;
-    }
-    .image__text--eighth{
-    left:  18%;
-    }
-
-    .image__text--fifth, .image__text--sixth, .image__text--seventh , .image__text--eighth{
-    bottom: 6%;
-    }
-
-    .image__item{
-        width: 300px;
-        margin-bottom: 10px;
-        transition: filter .5s ease-in-out;
-        filter: grayscale(100%)
-    }
-
-    .image__item:hover{
-        transform: translateY(10px); 
-        filter: none;
-    }
-
-    .image__item{
-        margin-left: 1%;
-        border-radius: 8px;
-        cursor: pointer;
-    }
-
-    .image--title{
-    position: relative;
-    margin: 0.1% 0.4%;
-    line-height: 29px;
-    }
-
-    
-    
-    
-    
+	.gallery__button--white {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-basis: 140px;
+		height: 40px;
+		color: black;
+		background-color: #fff;
+		font-weight: bold;
+		cursor: pointer;
+		text-decoration: none;
+		border-radius: 2px;
+		text-transform: uppercase;
+	}
+}
