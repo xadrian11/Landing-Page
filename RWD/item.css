@@ -11,28 +11,14 @@
     margin-bottom: 10px;
 }
 
+.item__image {
+    cursor: pointer;
+    width: 100%;
+}
+
 @media only screen and (min-width: 1280px) {
     .item {
         width: 200px;
-    }
-}
-
-.item__image {
-    width: 100%;
-    cursor: pointer;
-}
-
-.item__image:not(.mobile) {
-    display: none;
-}
-
-@media only screen and (min-width: 1280px) {
-    .item__image.mobile {
-        display: none;
-    }
-
-    .item__image:not(.mobile) {
-        display: block;
     }
 }
 
@@ -45,7 +31,7 @@
     text-transform: uppercase;
 }
 
-@media only screen and (min-width: 1279px) {
+@media only screen and (min-width: 1280px) {
     .items {
         justify-content: space-between;
     }

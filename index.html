@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="/RWD/hamburger.css">
     <link rel="stylesheet" href="/RWD/item.css">
     <link rel="stylesheet" href="/RWD/social.css">
+    <link rel="stylesheet" href="RWD/mobile-menu.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet">
@@ -45,6 +46,7 @@
                 <span></span>
                 <span></span>
             </div>
+            <div class="mobile-menu"></div>
         </nav>
         <div class="wrapper">
             <div class="wrapper__title">
@@ -72,44 +74,74 @@
 
         <div class="items">
             <div class="item">
-                <img class="item__image mobile" src="images/mobile/image-deep-earth.jpg" alt=" Center earth">
-                <img class="item__image" src="images/desktop/image-deep-earth.jpg" alt=" Center earth">
+                <picture>
+                    <source media="(max-width:1279px )" srcset="images/mobile/image-deep-earth.jpg">
+                    <source media="(min-width:1280px)" srcset="images/desktop/image-deep-earth.jpg">
+                    <img class="item__image" src="images/mobile/image-deep-earth.jpg" alt="Center earth">
+                </picture>
                 <p class="item__text">deep <br>earth</p>
             </div>
+
             <div class="item">
-                <img class="item__image mobile" src="images/mobile/image-night-arcade.jpg" alt="arcade">
-                <img class="item__image" src="images/desktop/image-night-arcade.jpg" alt="arcade">
+                <picture>
+                    <source media="(max-width:1279px )" srcset="images/mobile/image-night-arcade.jpg">
+                    <source media="(min-width:1280px)" srcset="images/desktop/image-night-arcade.jpg">
+                    <img class="item__image" src="images/mobile/image-night-arcade.jpg" alt="arcade">
+                </picture>
                 <p class="item__text">Night <br> arcade</p>
             </div>
+
             <div class="item">
-                <img class="item__image mobile" src="images/mobile/image-soccer-team.jpg" alt="football player">
-                <img class="item__image" src="images/desktop/image-soccer-team.jpg" alt="football player">
-                <p class="item__text">Soccer <br>team VR
-                </p>
+                <picture>
+                    <source media="(max-width:1279px )" srcset="images/mobile/image-soccer-team.jpg">
+                    <source media="(min-width:1280px)" srcset="images/desktop/image-soccer-team.jpg">
+                    <img class="item__image" src="images/mobile/image-soccer-team.jpg" alt="football player">
+                </picture>
+                <p class="item__text">Soccer <br>team VR</p>
             </div>
+
             <div class="item">
-                <img class="item__image mobile" src="images/mobile/image-grid.jpg" alt="sport car">
-                <img class="item__image" src="images/desktop/image-grid.jpg" alt="sport car">
+                <picture>
+                    <source media="(max-width:1279px )" srcset="images/mobile/image-grid.jpg">
+                    <source media="(min-width:1280px)" srcset="images/desktop/image-grid.jpg">
+                    <img class="item__image" src="images/mobile/image-grid.jpg" alt="sport car">
+                </picture>
                 <p class="item__text">The <br>grid</p>
             </div>
+
             <div class="item">
-                <img class="item__image mobile" src="images/mobile/image-from-above.jpg" alt=" Center earth">
-                <img class="item__image" src="images/desktop/image-from-above.jpg" alt=" Center earth">
+                <picture>
+                    <source media="(max-width:1279px )" srcset="images/mobile/image-from-above.jpg">
+                    <source media="(min-width:1280px)" srcset="images/desktop/image-from-above.jpg">
+                    <img class="item__image" src="images/mobile/image-from-above.jpg" alt="from above">
+                </picture>
                 <p class="item__text">From up <br> above VR</p>
             </div>
+
             <div class="item">
-                <img class="item__image mobile" src="images/mobile/image-pocket-borealis.jpg" alt="arcade">
-                <img class="item__image" src="images/desktop/image-pocket-borealis.jpg" alt="arcade">
+                <picture>
+                    <source media="(max-width:1279px )" srcset="images/mobile/image-pocket-borealis.jpg">
+                    <source media="(min-width:1280px)" srcset="images/desktop/image-pocket-borealis.jpg">
+                    <img class="item__image" src="images/mobile/image-pocket-borealis.jpg" alt="pocet borealis">
+                </picture>
                 <p class="item__text">Pocket <br> borealis</p>
             </div>
+
             <div class="item">
-                <img class="item__image mobile" src="images/mobile/image-curiosity.jpg" alt="football player">
-                <img class="item__image" src="images/desktop/image-curiosity.jpg" alt="football player">
+                <picture>
+                    <source media="(max-width:1279px )" srcset="images/mobile/image-curiosity.jpg">
+                    <source media="(min-width:1280px)" srcset="images/desktop/image-curiosity.jpg">
+                    <img class="item__image" src="images/mobile/image-curiosity.jpg" alt="curiosity">
+                </picture>
                 <p class="item__text">The <br> curiosity</p>
             </div>
+
             <div class="item">
-                <img class="item__image mobile" src="images/mobile/image-fisheye.jpg" alt="sport car">
-                <img class="item__image" src="images/desktop/image-fisheye.jpg" alt="sport car">
+                <picture>
+                    <source media="(max-width:1279px )" srcset="images/mobile/image-fisheye.jpg">
+                    <source media="(min-width:1280px)" srcset="images/desktop/image-fisheye.jpg">
+                    <img class="item__image" src="images/mobile/image-fisheye.jpg" alt="fisheye">
+                </picture>
                 <p class="item__text">Make it <br> fisheye
                 </p>
             </div>
