@@ -1,12 +1,46 @@
-/* .mobile-menu {
+.mobile-menu {
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: black;
+    left: 100%;
+    height: 100vh;
+    width: 100vw;
+    background: rgb(131, 58, 180);
+    background: linear-gradient(
+        90deg,
+        rgba(131, 58, 180, 1) 0%,
+        rgba(253, 29, 94, 1) 50%,
+        rgba(252, 176, 69, 1) 100%
+    );
     z-index: 2;
-} */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(0);
+    transition: transform 300ms;
+}
+
+.mobile-menu.open {
+    transform: translateX(-100%);
+}
+
+.mobile-list {
+    text-transform: uppercase;
+}
+
+.menu-item a {
+    padding: 0 30px;
+    font-family: 'Rozha One', sans-serif;
+    font-size: 2rem;
+    line-height: 50px;
+    pointer-events: none;
+}
+
+.menu-item a:hover {
+    background: -webkit-linear-gradient(200deg, #be0b2c, #1222af);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 
 /* z-index */
 /* document.getElementsByClassName - modyfikacja DOM z JavaScript */

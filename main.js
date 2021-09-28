@@ -1,9 +1,15 @@
-const hamburgerActive = document.querySelector('.hamburger')
+const hamburgerElement = document.querySelector('.hamburger')
+const mobileMenuElement = document.querySelector('.mobile-menu')
+const bodyElement = document.querySelector('body')
 
-hamburgerActive.addEventListener('click', () =>{
-    if (hamburgerActive.classList.contains('open')){
-        hamburgerActive.classList.remove('open')
+hamburgerElement.addEventListener('click', () => {
+    if (hamburgerElement.classList.contains('open')) {
+        hamburgerElement.classList.remove('open')
+        mobileMenuElement.classList.remove('open')
+        bodyElement.classList.remove('noscroll')
     } else {
-        hamburgerActive.classList.add('open')
+        hamburgerElement.classList.add('open')
+        mobileMenuElement.classList.add('open')
+        bodyElement.classList.add('noscroll')
     }
 })
